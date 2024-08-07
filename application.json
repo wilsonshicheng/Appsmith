@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "01-LoginPage",
       "isDefault": true
     }
   ],
@@ -11,7 +11,7 @@
   "color": "#F1DEFF",
   "icon": "sunflower",
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
     "type": "FLUID"
@@ -19,5 +19,6 @@
   "evaluationVersion": 2,
   "applicationVersion": 2,
   "isManualUpdate": false,
+  "viewerLayout": "{\"color\":\"var(--ads-color-brand)\",\"logoUrl\":\"\",\"name\":\"WIlson Demo\",\"treeData\":[{\"title\":\"01-LoginPage\",\"pageId\":\"66b2d2789d28026fe788a205\",\"isPage\":true,\"icon\":\"lock\"}],\"outsiderTree\":[]}",
   "deleted": false
 }
