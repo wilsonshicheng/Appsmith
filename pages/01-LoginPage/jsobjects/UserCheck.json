@@ -1,0 +1,25 @@
+{
+  "unpublishedCollection": {
+    "name": "UserCheck",
+    "pageId": "01-LoginPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\t\n\tFunc1: () => {\n\t\t// 这里可以写一些初始化代码或者其他同步代码\n\t\tconsole.log(\"myFun1 is called\");\n\t},\n\n\tUserCheck: async (userId, password) => {\n\t\t// 使用 async-await 来处理异步请求\n\t\ttry {\n\t\t\tconst response = await fetch('/api/login', {\n\t\t\t\tmethod: 'POST',\n\t\t\t\theaders: {\n\t\t\t\t\t'Content-Type': 'application/json'\n\t\t\t\t},\n\t\t\t\tbody: JSON.stringify({ userId, password })\n\t\t\t});\n\n\t\t\tconst result = await response.json();\n\t\t\tif (result.success) {\n\t\t\t\tconsole.log('Login successful');\n\t\t\t} else {\n\t\t\t\tconsole.log('Login failed: ' + result.message);\n\t\t\t}\n\t\t} catch (error) {\n\t\t\tconsole.error('Error:', error);\n\t\t\tconsole.log('An error occurred during login');\n\t\t}\n\t}\n}\n",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "01-LoginPage_UserCheck",
+  "deleted": false,
+  "gitSyncId": "66b2bdab9d28026fe788a1bc_66b3067a9d28026fe788a2ad"
+}
